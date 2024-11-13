@@ -1,0 +1,35 @@
+.cursor {
+  width: 10px;
+  height: 10px;
+  position: fixed;
+  pointer-events: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.284);
+  border: 2px solid rgba(255, 255, 255, 0.83); 
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease, border 0.4s ease;
+
+  &.hovered {
+    width: 76px; 
+    height: 76px;
+    border-width: 2px;
+  }
+}
+
+.dot {
+  width: 17px; 
+  height: 17px;
+  background-color: rgba(255, 255, 255, 0.83);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media(max-width: 1000px) {
+  .cursor {
+    display: none;
+  }
+}

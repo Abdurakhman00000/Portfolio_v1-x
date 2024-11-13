@@ -1,0 +1,93 @@
+
+
+.toast-custom {
+    background-color: black !important;
+    color: white !important;
+}
+
+.toast-custom.toastify-success {
+    background-color: rgb(219, 68, 68) !important;
+}
+
+
+.Contact {
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 400;
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+
+            span {
+                color: rgba(168, 95, 0, 0.732);
+            }
+        }
+
+        form {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 10px;
+
+            p {
+                margin-top: 8px;
+                font-size: 15px;
+                font-weight: 400;
+                font-family: "Roboto Mono", monospace;
+                color: rgba(168, 95, 0, 0.732);
+            }
+
+            input {
+                width: 100%;
+                height: 50px;
+                background: #333333a1;
+                border: none;
+                outline: none;
+                padding: 0 15px;
+                color: rgba(255, 255, 255, 0.616);
+                font-size: 15px;
+                border-radius: 4px;
+
+                &:focus {
+                    border: 2px solid rgba(168, 95, 0, 0.323);
+                }
+            }
+
+            textarea {
+                resize: vertical;
+                width: 100%;
+                height: 110px;
+                max-height: 400px;
+                background: #333333a1;
+                color: rgba(255, 255, 255, 0.616);
+                padding: 13px 15px;
+                border: none;
+                outline: none;
+                border-radius: 4px;
+
+                &:focus {
+                    border: 2px solid rgba(168, 95, 0, 0.323);
+                }
+            }
+
+            button {
+                margin-top: 16px;
+                width: 100%;
+                height: 50px;
+                background: transparent;
+                border: 2px solid rgba(168, 95, 0, 0.323);
+                color: rgba(168, 95, 0, 0.732);
+                border-radius: 4px;
+                font-size: 17px;
+            }
+        }
+    }
+}

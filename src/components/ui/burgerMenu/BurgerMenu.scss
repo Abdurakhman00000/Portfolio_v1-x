@@ -1,0 +1,137 @@
+.main_burger {
+    display: none;
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        position: fixed;
+        top: 30px;
+        right: 20px;
+        z-index: 1000;
+        transition: transform 0.5s ease-in-out;
+
+        &.active {
+            transform: rotate(360deg);
+        }
+
+        div {
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+            transition: all 0.4s ease;
+            border-radius: 5px;
+        }
+
+        &.active {
+            .line1 {
+                transform: rotate(45deg) translate(6px, 6px);
+                background-color: #ff6347;
+            }
+
+            .line2 {
+                opacity: 0;
+            }
+
+            .line3 {
+                transform: rotate(-45deg) translate(6px, -6px);
+                background-color: #ff6347;
+            }
+        }
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 94px;
+        right: 20px;
+        width: 240px;
+        height: 320px;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+        opacity: 0;
+        border-radius: 8px;
+        border: 1px solid rgba(168, 95, 0, 0.732);
+
+        &.active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+
+            li {
+                margin: 10px 0;
+
+                a {
+                    font-family: "Roboto Mono", monospace;
+                    color: #fff;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-decoration: none;
+                    transition: color 0.3s;
+
+                    &:hover {
+                        color: #ff6347;
+                    }
+                }
+            }
+        }
+
+
+        .burger_social_media {
+            margin-bottom: -5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            svg {
+                color: white;
+                width: 23px;
+                height: 23px;
+            }
+        }
+
+        .menu-footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .interview-btn,
+            .resume-btn {
+                background-color: transparent;
+                color: #fff;
+                border: 1px solid #ff6347;
+                border-radius: 5px;
+                padding: 10px 25px;
+                cursor: pointer;
+                margin: 5px;
+                transition: background-color 0.3s, color 0.3s;
+
+                &:hover {
+                    background-color: #ff6347;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media(max-width: 999px) {
+    .main_burger {
+        display: block;
+    }
+}

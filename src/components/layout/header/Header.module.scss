@@ -1,0 +1,108 @@
+
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    backdrop-filter: blur(7px);
+    padding: 30px 0;
+    background: rgb(17 17 17 / 18.8%);
+    z-index: 1000;
+    transition: width 0.3s ease, padding 0.3s ease;
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .Header_Logo {
+            h1 {
+                font-size: 30px;
+                font-weight: 400;
+                color: white;
+                user-select: none;
+            }
+        }
+
+        .Header_right {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            .Header_Nav {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+
+                a {
+                    color: white;
+                    font-family: "Inter", sans-serif;
+                }
+            }
+
+            .Resume_button {
+                button {
+                    width: 100px;
+                    height: 40px;
+                    background: transparent;
+                    border: none;
+                    border-radius: 4px;
+                    border: 2px solid rgba(128, 73, 0, 0.732);
+                    color: rgba(168, 95, 0, 0.732);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 999px) {
+    .Header {
+        .content {
+            .Header_right {
+                display: none;
+            }
+        }
+    }
+}
+
+.scrolled {
+    width: 90%;
+    padding: 15px 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.4s ease, padding 0.4s ease, top 0.4s ease;
+}
+
+
+
+@media(max-width: 1180px) {
+    .scrolled {
+        width: 99%;
+        padding: 18px 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width 0.4s ease, padding 0.4s ease, top 0.4s ease;
+    }
+}
+
+
+@media(max-width: 1000px) {
+    .scrolled {
+        width: 99%;
+        padding: 29px 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width 0.4s ease, padding 0.4s ease, top 0.4s ease;
+    }
+}
+
+@media(max-width: 768px) {
+    .scrolled {
+        width: 99%;
+        padding: 29px 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width 0.4s ease, padding 0.4s ease, top 0.4s ease;
+    }
+}
