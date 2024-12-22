@@ -7,7 +7,7 @@ import scss from "./About.module.scss";
 const About = () => {
   const aboutText = {
     text1:
-      "Hi! My name is Abdurahman, and I am a beginner frontend developer. My passion is creating beautiful anduser-friendly web applications that delight users. I am always striving to learn new technologies and improve my skills in order to create better solutions for my projects.",
+      "Hi! My name is Abdurahman, and I am frontend developer. My passion is creating beautiful anduser-friendly web applications that delight users. I am always striving to learn new technologies and improve my skills in order to create better solutions for my projects.",
     text2:
       "My goals are to continue growing in development, explore new frameworks and libraries, and work on projects that have real value and can improve users' everyday lives.",
     text3:

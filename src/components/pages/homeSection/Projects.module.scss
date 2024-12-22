@@ -1,11 +1,170 @@
-.Projects {
-    .content {
-        margin: 170px 0;
-        h2 {
-            color: white;
+.Mains {
+    margin: 100px 0;
+
+    .projectCard {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 60px;
+        gap: 2rem;
+        align-items: center;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.096);
+        color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        .projectImage {
+            flex: 1 1 50%;
+
+            img {
+                height: 600px;
+                border-radius: 10px;
+            }
         }
-        p {
-            color: white;
+
+        .projectDetails {
+            flex: 1 1 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .projectTitle {
+                font-size: 1rem;
+                color: #9a5af3;
+                text-transform: uppercase;
+            }
+
+            .projectName {
+                font-size: 2rem;
+                font-weight: 700;
+            }
+
+            .projectDescription {
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #d1d1e9;
+            }
+
+            .projectTech {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+
+                span {
+                    background-color: #57575751;
+                    color: orange;
+                    padding: 0.3rem 0.6rem;
+                    border-radius: 4px;
+                    font-size: 0.9rem;
+                }
+            }
         }
     }
+
+
+    .projectCard2 {
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.096);
+        padding: 2rem;
+        color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        .projectImage {
+            flex: 1 1 50%;
+
+            img {
+                height: 300px;
+                border-radius: 10px;
+            }
+        }
+
+        .projectDetails {
+            flex: 1 1 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .projectTitle {
+                font-size: 1rem;
+                color: #9a5af3;
+                text-transform: uppercase;
+            }
+
+            .projectName {
+                font-size: 2rem;
+                font-weight: 700;
+            }
+
+            .projectDescription {
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #d1d1e9;
+            }
+
+            .projectTech {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+
+                span {
+                    background-color: #33344d;
+                    color: #9a5af3;
+                    padding: 0.3rem 0.6rem;
+                    border-radius: 4px;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .projectCard {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 1.5rem;
+        }
+
+        .projectCard2 {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 1.5rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .projectDetails {
+            .projectName {
+                font-size: 1.5rem;
+            }
+
+            .projectDescription {
+                font-size: 13px;
+            }
+
+            .projectTech span {
+                font-size: 0.8rem;
+            }
+        }
+
+
+        .projectDetails2 {
+            .projectName {
+                font-size: 1.5rem;
+            }
+
+            .projectDescription {
+                font-size: 13px;
+            }
+
+            .projectTech span {
+                font-size: 0.8rem;
+            }
+        }
+          }
+    
 }
