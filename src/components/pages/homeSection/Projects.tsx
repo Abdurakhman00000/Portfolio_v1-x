@@ -77,7 +77,7 @@ export default function ProjectCard() {
 
         <div className={styles.projectCard}>
           <div className={styles.projectImage}>
-            <Link href="https://fake-store-blush-nu.vercel.app/">
+            <Link href="https://strong-pass.vercel.app/">
               <Image
                 src={project3}
                 alt="Project Image"
