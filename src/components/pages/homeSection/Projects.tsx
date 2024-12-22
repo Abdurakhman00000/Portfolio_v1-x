@@ -61,8 +61,8 @@ export default function ProjectCard() {
               IANT STUDIO – A portfolio website for an IT company showcasing its
               expertise in creating innovative and high-quality digital
               solutions. With a focus on modern technologies and design, IANT
-              STUDIO highlights the company's successful projects, services, and
-              commitment to delivering exceptional results for clients.
+              STUDIO highlights the company&#39;s successful projects, services,
+              and commitment to delivering exceptional results for clients.
             </p>
             <div className={styles.projectTech}>
               <span>TypeScript</span>
