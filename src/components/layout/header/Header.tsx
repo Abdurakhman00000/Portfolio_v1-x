@@ -24,6 +24,8 @@ const Header: React.FC = () => {
     };
   }, []);
 
+  const resume = ""
+
   return (
     <Element name="home">
       <header className={`${scss.Header} ${isScrolled ? scss.scrolled : ""}`}>
@@ -81,7 +83,9 @@ const Header: React.FC = () => {
                 </ScrollLink>
               </div>
               <div className={scss.Resume_button}>
-                <button className="hover-target">Resume</button>
+                <button>
+                <a href='/AbdurakhmanAbdibaitovFrontend-resume-v8.pdf' download className="hover-target">Resume</a>
+                </button>
               </div>
             </div>
           </div>
