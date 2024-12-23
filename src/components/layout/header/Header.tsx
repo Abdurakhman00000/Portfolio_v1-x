@@ -24,7 +24,6 @@ const Header: React.FC = () => {
     };
   }, []);
 
-  const resume = ""
 
   return (
     <Element name="home">
