@@ -108,14 +108,16 @@ const BurgerMenu: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-            >
+            > 
               <SiGmail />
             </a>
           </div>
 
 
           <div className="menu-footer">
-            <button className="resume-btn">Resume</button>
+            <button className="resume-btn">
+            <a href='/AbdurakhmanAbdibaitovFrontend-resume-v8.pdf' download className="hover-target">Resume</a>
+            </button>
           </div>
         </nav>
       </div>
