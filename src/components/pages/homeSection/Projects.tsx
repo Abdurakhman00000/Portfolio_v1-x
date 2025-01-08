@@ -9,6 +9,7 @@ export default function ProjectCard() {
   return (
     <section className={styles.Mains}>
       <div className="container_for_content">
+        <h1 style={{color: 'white', textAlign: 'center', fontSize: '37px', marginBottom: '50px', marginTop: '60px'}}>Projects</h1>
         <div className={styles.projectCard}>
           <div className={styles.projectImage}>
             <Link href="https://fake-store-blush-nu.vercel.app/">
